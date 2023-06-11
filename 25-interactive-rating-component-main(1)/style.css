@@ -1,0 +1,150 @@
+.body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #131518;
+    font-family: 'Overpass', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 15px;
+    margin: auto;
+    width: 280px;
+    height: 300px;
+    padding: 34px 34px 24px 24px;
+
+}
+
+.logobox {
+    display: flex;
+    background-color: rgba(38, 46, 56, 1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.icon {
+    width: 13px;
+    height: 13px;
+    margin: auto;
+}
+
+.h1 {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+
+}
+
+.textmobile{
+    color: rgba(150, 159, 173, 1);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+.textdesktop{
+    display: none;
+}
+
+.nummsbox {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+
+.numms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(38, 46, 56, 1);
+    border-radius: 50%;
+    font-size: 14px;
+    color: rgba(124, 135, 152, 1);
+}
+
+.submit {
+    width: 279px;
+    height: 45px;
+    border-radius: 22px;
+    background-color: rgba(252, 118, 20, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        width: 370px;
+        height: 380px;
+        padding: 0;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .logobox {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 37px;
+    }
+
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .h1 {
+        font-size: 28px;
+    }
+
+    .textdesktop{
+        font-size: 15px;
+        margin-bottom: 37px;
+        display: block;
+        color: rgba(150, 159, 173, 1);
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .textmobile{
+        display: none;
+    }
+
+    .numms {
+        width: 51px;
+        height: 51px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.9s ease;
+    }
+
+    .numms:hover {
+        background-color: orange;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .submit {
+        width: 341px;
+        height: 45px;
+        border-radius: 22px;
+        transition: 0.9s ease;
+    }
+
+    .submit:hover {
+        background-color: white;
+        color: orange;
+    }
+}
